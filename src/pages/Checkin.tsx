@@ -76,24 +76,26 @@ const Checkin = ({ userId }: CheckinProps) => {
           </h1>
         </div>
 
-        <div className="space-y-4 pt-8">
-          <NurturingButton 
-            onClick={() => handleResponse('alright')}
-            className="w-full max-w-md mx-auto"
-          >
-            Yep, I'm alright! 😊
-          </NurturingButton>
+        <div className="space-y-6 pt-8">
+          <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <NurturingButton 
+              onClick={() => handleResponse('alright')}
+              className="h-32 text-lg"
+            >
+              Yep, I'm alright! 😊
+            </NurturingButton>
 
-          <NurturingButton 
-            onClick={() => handleResponse('not_alright')}
-            className="w-full max-w-md mx-auto bg-accent hover:bg-accent/90"
-          >
-            No, I'm not alright... 💗
-          </NurturingButton>
+            <NurturingButton 
+              onClick={() => handleResponse('not_alright')}
+              className="h-32 text-lg bg-accent hover:bg-accent/90"
+            >
+              No, I'm not alright... 💗
+            </NurturingButton>
+          </div>
 
-          <GentleButton className="w-full max-w-md mx-auto">
+          <button className="text-muted-foreground hover:text-foreground transition-colors underline">
             Delay check-in
-          </GentleButton>
+          </button>
         </div>
       </div>
     </div>
