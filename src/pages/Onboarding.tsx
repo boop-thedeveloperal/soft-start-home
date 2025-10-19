@@ -166,6 +166,7 @@ const Onboarding = () => {
                     <span className="text-2xl">{state.icon}</span>
                     {state.label}
                   </h3>
+                  <p className="text-sm text-muted-foreground pl-9">{state.description}</p>
                   
                   <div className="space-y-2">
                     {soothingActions[state.id]?.map((action, idx) => (
